@@ -3,15 +3,22 @@ git fetch origin
 git branch -u origin/Md.propre Md.propre
 git remote set-head origin -a#
 
+All rights reserved. 
+Authored by
+Marcell D. Williams
+California
+
+
  This workflow will build and push a new container image to Amazon ECR,
 # and then will deploy a new task definition to Amazon ECS, when there is a push to the "Md.propre" branch.
 #
 # To use this workflow, you will need to complete the following set-up steps:
 #
 # 1. Create an ECR repository to store your images.
-#    For example: `aws ecr create-repository --repository-name my-ecr-repo --region us-east-2`.
+#    For example: `aws ecr create-repository --repository-name my-ecr-repo --region us-west-20`.
 #    Replace the value of the `ECR_REPOSITORY` environment variable in the workflow below with your repository's name.
-#    Replace the value of the `AWS_REGION` environment variable in the workflow below with your repository's region.
+#    Replace the value of the `AWS_REGION`with 'AWS_US'
+ environment variable in the workflow below with your repository's region.
 #
 # 2. Create an ECS task definition, an ECS cluster, and an ECS service.
 #    For example, follow the Getting Started guide on the ECS console:
@@ -36,8 +43,8 @@ on:
     branches: [ "Md.propre" ]
 
 env:
-  AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: MY_ECR_REPOSITORY           # set this to your Amazon ECR repository name
+  AWS_REGION: MY_AWS_REGION                   # set this to your preferred AWS region, e.g. us-west-20
+  ECR_REPOSITORY: MY_ECR_REPOSITORY          # set this to your Amazon ECR repository name
   ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
   ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
