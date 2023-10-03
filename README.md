@@ -7,11 +7,7 @@
 
 
    "Propre Monde SPC's" CEO
-     Marcell Donte CA of the Willliams family.
-
-<!---
-Humanity-prevails/Humanity-prevails is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
+ the Preview link to take a look at your changes.
 --->
 git branch -m main Md.propre
 git fetch origin
