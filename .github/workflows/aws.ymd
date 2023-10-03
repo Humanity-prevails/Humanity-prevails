@@ -3,10 +3,8 @@ git fetch origin
 git branch -u origin/Md.propre Md.propre
 git remote set-head origin -a#
 
-All rights reserved. 
-Authored by
-Marcell D. Williams
-California
+All rights reserved.
+Tell_Le_Monde 
 
 
  This workflow will build and push a new container image to Amazon ECR,
