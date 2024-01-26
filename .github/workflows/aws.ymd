@@ -1,11 +1,7 @@
-git branch -m main Md.propre
-git fetch origin
-git branch -u origin/Md.propre Md.propre
-git remote set-head origin -a#
 
-All rights reserved.
-Tell_Le_Monde 
 
+curl -H "X-CMC_PRO_API_KEY: "ef7f0bcb-8861-4926-8ebd-db7d4caeacc7" -H "Accept: application/json" -d "start=1&limit=20000&convert=USD" -G https://s
+pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest
 
  This workflow will build and push a new container image to Amazon ECR,
 # and then will deploy a new task definition to Amazon ECS, when there is a push to the "Md.propre" branch.
