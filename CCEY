@@ -1,0 +1,1 @@
+Curl -H "X-CMC_PRO_API_KEY: d3535665-d010-42ca-aa60-bd55911c179d" -H "Accept: application/json" -d "start=1&limit=50000&convert=USD" -G https://www.pro-api.coinmarketcap.co
